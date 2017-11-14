@@ -34,6 +34,6 @@ public class BaseActivity extends AppCompatActivity {
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this); //TODO this was erroring out when I just had "this" written hear instead of typecasting it. I don't think typecasting the BaseActivity to NavigationView.OnNavigationItemSelectedListener is what I want, but I don't know how to direct "this" to point to navigationView.OnNavigationItemSelectedListener
     }
 }
