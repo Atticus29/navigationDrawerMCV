@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/actual_drawer_layout">
+    android:id="@+id/drawer_layout">
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"

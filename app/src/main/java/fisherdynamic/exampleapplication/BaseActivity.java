@@ -36,7 +36,7 @@ public class BaseActivity extends AppCompatActivity {
     {
 //        super.onCreate(savedInstanceState);
 //         R.id.drawer_layout should be in every activity with exactly the same id.
-        drawerLayout = (DrawerLayout) findViewById(R.id.actual_drawer_layout);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         drawerToggle = new ActionBarDrawerToggle((Activity) this, drawerLayout,  0, 0)
         {
