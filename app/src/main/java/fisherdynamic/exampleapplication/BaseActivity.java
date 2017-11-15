@@ -32,13 +32,13 @@ public class BaseActivity extends AppCompatActivity {
     private ActionBarDrawerToggle drawerToggle;
     private Map map;
 
-    protected void onCreate(Bundle savedInstanceState)
+    protected void onCreateDrawer()
     {
-        super.onCreate(savedInstanceState);
-        // R.id.drawer_layout should be in every activity with exactly the same id.
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        super.onCreate(savedInstanceState);
+//         R.id.drawer_layout should be in every activity with exactly the same id.
+        drawerLayout = (DrawerLayout) findViewById(R.id.actual_drawer_layout);
 
-        drawerToggle = new ActionBarDrawerToggle((Activity) this, drawerLayout, R.drawable.ic_drag_handle_black_24dp, 0, 0)
+        drawerToggle = new ActionBarDrawerToggle((Activity) this, drawerLayout,  0, 0)
         {
             public void onDrawerClosed(View view)
             {
@@ -68,7 +68,7 @@ public class BaseActivity extends AppCompatActivity {
         drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int pos, long arg3) {
-                map.drawerClickEvent(pos);
+//                map.drawerClickEvent(pos);
             }
         });
     }
